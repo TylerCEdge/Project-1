@@ -1,0 +1,17 @@
+.panel-body {
+  background-image: url("../images/backgroundGreen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3 {
+  color: white;
+}
+
+body {
+  background-image: url(../images/blogBackground.jpg);
+  background-position: top; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
