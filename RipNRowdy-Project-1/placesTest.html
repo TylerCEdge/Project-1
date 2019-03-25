@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/pub.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arvo|Cinzel:700|Cormorant+Upright|Hanuman|Montserrat|Playfair+Display+SC|Pridi|Quattrocento"
+  rel="stylesheet">
+  <script src="assets/javascript/map.js"></script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+  <!-- <script src="assets/javascript/map.js"></script> -->
+
+
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arvo|Cinzel:700|Cormorant+Upright|Hanuman|Montserrat|Playfair+Display+SC|Pridi|Quattrocento"
+  rel="stylesheet">
+  <script src="assets/javascript/map.js"></script>
+ <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+
+  <!-- <script src="assets/javascript/map.js"></script> -->
+
+  <title>Rip N Rowdy - Bar Crawl Schedule</title>
+
+
+  <header class ="banner">Map Out Your Trip Here</header>
+  
+</head>
+
+<body>
+  <ul class="nav">
+    <li class="nav-item text-center">
+      <h3><a class="nav-link active" href="index.html">Home</a></h3>
+    </li>
+    <li class="nav-item text-center">
+      <h3><a class="nav-link" href="blog.html">Blog</a></h3>
+    </li>
+    <li class="nav-item text-center">
+      <h3><a class="nav-link" href="contact.html">Team Contact</a></h3>
+    </li>
+    <li class="nav-item text-center">
+      <h3><a class="nav-link" href="placesTest.html">Map Out Your Trip</a></h3>
+    </li>
+    <!-- <li class="nav-item text-center">
+      <h3><a class="nav-link" href="userStories.html">Beer Stories</a></h3>
+    </li> -->
+  </ul>
+
+
+  <div id="content">
+    <div id="map">
+    </div>
+    <div id="weather-backdrop">
+      <div id="weather">
+        <div class="city" id="wdata"></div>
+        <div class="wind" id="wdata"></div>
+        <div class="humidity" id="wdata"></div>
+        <div class="temp" id="wdata"></div>
+        <div class="conditions" id="wdata"></div>
+        <div id="icon wdata"><img id="wicon" src="" alt="Weather icon"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bannerForEntries">Click on the Bars Below to Add/Remove Them to Your Bar Crawl!</div>
+
+  <div id="selection">    
+    <div id="table">
+      <table id="barChoices">
+        <thead>
+          <tr>
+            <th>
+              Name
+            </th>
+            <th>
+              Rating
+            </th>
+            <th>
+              Address
+            </th>
+            <th>
+              Price Level
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </div>
+    <button type="submit" id="submitButton">Print Your Crawl</button>
+  </div>
+
+  <p id="testBars"></p>
+
+  <!-- <div id="right-panel">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+    </div> -->
+  <div id="displayResults">
+  </div>
+  <button id="more">More results</button>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAojybYIVNELkkcEVwpcUOtJTYR1fSx_UI&libraries=places&callback=initMap"
+    async defer></script>
+</body>  
+  
+  <!-- Javascript -->
+  <script src="assets/javascript/map.js"></script>
+
+  </body>
+</html>
